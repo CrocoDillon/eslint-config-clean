@@ -11,6 +11,10 @@ module.exports = {
     'react/forbid-component-props': 0,
     // forbid certain propTypes
     'react/forbid-prop-types': 0,
+    // prevent using Array index in key props
+    'react/no-array-index-key': 2,
+    // prevent passing children as props
+    'react/no-children-prop': 2,
     // prevent usage of dangerous JSX properties
     'react/no-danger': 0,
     // prevent problem with children and props.dangerouslySetInnerHTML
@@ -35,8 +39,12 @@ module.exports = {
     'react/no-set-state': 0,
     // prevent using string references in ref attribute
     'react/no-string-refs': 2,
+    // prevent invalid characters from appearing in markup
+    'react/no-unescaped-entities': 2,
     // prevent usage of unknown DOM property
     'react/no-unknown-property': 2,
+    // prevent definitions of unused prop types
+    'react/no-unused-prop-types': 2,
     // enforce ES5 or ES6 class for React Components
     'react/prefer-es6-class': 2,
     // enforce stateless React Components to be written as a pure function
@@ -45,8 +53,8 @@ module.exports = {
     'react/prop-types': 2,
     // prevent missing React when using JSX
     'react/react-in-jsx-scope': 2,
-    // restrict file extensions that may be required
-    'react/require-extension': 0,
+    // enforce a defaultProps definition for every prop that is not a required prop
+    'react/require-default-props': 2,
     // enforce React components to have a shouldComponentUpdate method
     'react/require-optimization': 0,
     // enforce ES5 or ES6 class for returning value in render function
@@ -57,6 +65,8 @@ module.exports = {
     'react/sort-comp': 2,
     // enforce propTypes declarations alphabetical sorting
     'react/sort-prop-types': 0,
+    // enforce style prop value being an object
+    'react/style-prop-object': 0,
 
     // ESLint-plugin-React JSX
     // https://github.com/yannickcr/eslint-plugin-react#jsx-specific-rules
@@ -101,6 +111,8 @@ module.exports = {
     'react/jsx-sort-props': 0,
     // validate spacing before closing bracket in JSX
     'react/jsx-space-before-closing': 2,
+    // validate whitespace in and around the JSX opening and closing brackets
+    'react/jsx-tag-spacing': 2,
     // prevent React to be incorrectly marked as unused
     'react/jsx-uses-react': 2,
     // prevent variables used in JSX to be incorrectly marked as unused
