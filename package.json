@@ -12,7 +12,9 @@
   },
   "keywords": [
     "eslint",
-    "eslintconfig"
+    "eslintconfig",
+    "react",
+    "flowtype"
   ],
   "author": "Dillon de Voor (http://crocodillon.com)",
   "license": "CC0-1.0",
