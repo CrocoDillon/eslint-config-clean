@@ -74,6 +74,8 @@ module.exports = {
     'array-callback-return': 0,
     // enforce the use of variables within the scope they are defined
     'block-scoped-var': 0,
+    // enforce that class methods utilize this
+    'class-methods-use-this': 0,
     // enforce a maximum cyclomatic complexity allowed in a program
     'complexity': 0,
     // require return statements to either always or never specify values
@@ -160,6 +162,8 @@ module.exports = {
     'no-redeclare': 2,
     // disallow assignment operators in return statements
     'no-return-assign': [2, 'except-parens'],
+    // disallow unnecessary return await
+    'no-return-await': 0,
     // disallow javascript: urls
     'no-script-url': 2,
     // disallow assignments where both sides are exactly the same
@@ -182,6 +186,8 @@ module.exports = {
     'no-useless-concat': 2,
     // disallow unnecessary escape characters
     'no-useless-escape': 2,
+    // disallow redundant return statements
+    'no-useless-return': 2,
     // disallow void operators
     'no-void': 2,
     // disallow specified warning terms in comments
@@ -190,6 +196,8 @@ module.exports = {
     'no-with': 2,
     // enforce the consistent use of the radix argument when using parseInt()
     'radix': [2, 'always'],
+    // disallow async functions which have no await expression
+    'require-await': 2,
     // require var declarations be placed at the top of their containing scope
     'vars-on-top': 0,
     // require parentheses around immediate function invocations
@@ -266,6 +274,8 @@ module.exports = {
     'brace-style': [2, '1tbs', { allowSingleLine: true }],
     // enforce camelcase naming convention
     'camelcase': 0,
+    // enforce or disallow capitalization of the first letter of a comment
+    'capitalized-comments': 0,
     // require or disallow trailing commas
     'comma-dangle': [2, 'never'],
     // enforce consistent spacing before and after commas
@@ -280,6 +290,8 @@ module.exports = {
     'eol-last': [2, 'unix'],
     // require or disallow spacing between function identifiers and their invocations
     'func-call-spacing': [2, 'never'],
+    // require function names to match the name of the variable or property to which they are assigned
+    'func-name-matching': 0,
     // require or disallow named function expressions
     'func-names': 0,
     // enforce the consistent use of either function declarations or expressions
@@ -298,10 +310,14 @@ module.exports = {
     'key-spacing': [2, { beforeColon: false, afterColon: true, mode: 'minimum' }],
     // enforce consistent spacing before and after keywords
     'keyword-spacing': [2, { before: true, after: true }],
+    // enforce position of line comments
+    'line-comment-position': 0,
     // enforce consistent linebreak style
     'linebreak-style': [2, 'unix'],
     // require empty lines around comments
     'lines-around-comment': 0,
+    // require or disallow newlines around directives
+    'lines-around-directive': 2,
     // enforce a maximum depth that blocks can be nested
     'max-depth': 0,
     // enforce a maximum line length
@@ -392,6 +408,8 @@ module.exports = {
     'semi-spacing': 2,
     // require or disallow semicolons instead of ASI
     'semi': [2, 'never'],
+    // require object keys to be sorted
+    'sort-keys': 0,
     // require variables within the same declaration block to be sorted
     'sort-vars': 0,
     // enforce consistent spacing before blocks
@@ -454,8 +472,8 @@ module.exports = {
     'prefer-arrow-callback': [2, { allowNamedFunctions: true }],
     // require const declarations for variables that are never reassigned after declared
     'prefer-const': [2, { destructuring: 'all' }],
-    // require Reflect methods where applicable
-    'prefer-reflect': 0,
+    // disallow parseInt() in favor of binary, octal, and hexadecimal literals
+    'prefer-numeric-literals': 2,
     // require rest parameters instead of arguments
     'prefer-rest-params': 2,
     // require spread operators instead of .apply()
@@ -468,6 +486,8 @@ module.exports = {
     'rest-spread-spacing': [2, 'never'],
     // enforce sorted import declarations within modules
     'sort-imports': 0,
+    // require symbol descriptions
+    'symbol-description': 2,
     // require or disallow spacing around embedded expressions of template strings
     'template-curly-spacing': [2, 'always'],
     // require or disallow spacing around the * in yield* expressions
