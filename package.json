@@ -1,0 +1,33 @@
+{
+  "name": "eslint-config-clean",
+  "version": "1.0.0",
+  "description": "Clean ESLint config",
+  "main": "index.js",
+  "scripts": {
+    "lint:js": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CrocoDillon/eslint-config-clean.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Dillon de Voor (http://crocodillon.com)",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/CrocoDillon/eslint-config-clean/issues"
+  },
+  "homepage": "https://github.com/CrocoDillon/eslint-config-clean",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-plugin-flowtype": "^2.29.1",
+    "eslint-plugin-react": "^6.7.1"
+  },
+  "peerDependencies": {
+    "eslint": "^3.11.1"
+  }
+}
