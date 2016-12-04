@@ -4,7 +4,7 @@
   "description": "Clean ESLint config",
   "main": "index.js",
   "scripts": {
-    "lint:js": "eslint ."
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
